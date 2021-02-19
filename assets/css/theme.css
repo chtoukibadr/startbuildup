@@ -8974,7 +8974,7 @@ fieldset:disabled .btn {
 }
 
 .p-8 {
-  padding: 7.5rem !important;
+  padding: 0rem !important;
 }
 
 .p-9 {
@@ -9030,8 +9030,8 @@ fieldset:disabled .btn {
 }
 
 .px-8 {
-  padding-right: 7.5rem !important;
-  padding-left: 7.5rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
 }
 
 .px-9 {
