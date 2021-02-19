@@ -56,9 +56,83 @@
 
 
 
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
 
+hr {
+  margin: 1rem 0;
+  color: #E1E0E4;
+  background-color: currentColor;
+  border: 0;
+  opacity: 1;
+}
 
+hr:not([size]) {
+  height: 1px;
+}
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  line-height: 1.2;
+  color: #112D58;
+}
+
+h1, .h1 {
+  font-size: calc(1.37383rem + 1.48598vw);
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.48832rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.33236rem + 0.98832vw);
+}
+
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2.0736rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.2978rem + 0.5736vw);
+}
+
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.728rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.269rem + 0.228vw);
+}
+
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.44rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.2rem;
+}
+
+h6, .h6 {
+  font-size: 0.83333rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -70,7 +144,88 @@ abbr[data-bs-original-title] {
   text-decoration-skip-ink: none;
 }
 
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
 
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: 800;
+}
+
+small, .small {
+  font-size: 75%;
+}
+
+mark, .mark {
+  padding: 0.2em;
+  background-color: #fcf8e3;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+a {
+  color: #1F3A63;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #192e4f;
+  text-decoration: underline;
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
 
 pre,
 code,
@@ -17268,7 +17423,7 @@ section {
 
 @media (min-width: 992px) {
   section {
-    padding-top: 7.5rem;
+    padding-top: 0rem;
     padding-bottom: 7.5rem;
   }
 }
